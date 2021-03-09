@@ -32,7 +32,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(MockitoExtension.class)
-public class BeerControllerTest {
+public class  BeerControllerTest {
 
     private static final String BEER_API_URL_PATH = "/api/v1/beers";
     private static final long VALID_BEER_ID = 1L;
@@ -47,6 +47,7 @@ public class BeerControllerTest {
 
     @InjectMocks
     private BeerController beerController;
+
 
     @BeforeEach
     void setUp() {
